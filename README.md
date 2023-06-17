@@ -50,13 +50,39 @@ let infosLivre = 'Le livre "' + titre + '" contient ' + nombrePages + ' pages, a
 
 ### Tableaux
 
-- Stocker les informations (dans l'ordre de création des variables) dans un tableau indexé
+- Stocker les informations (dans l'ordre de création des variables) dans un tableau indexé `tabLivreIndex`
 - Créer une chaine de caractères `infosLivre2` qui contient la même valeur que `infoLivre` mais à partir du tableau
 - Afficher la longueur du tableau
 
-- Stocker les informations (dans l'ordre de création des variables) dans un tableau associatif (en clé le nom de la variable)
+Correction
+
+```js
+let tabLivreIndex = [
+  354,
+  "JavaScript pour les Nuls",
+  24.95,
+  true
+];
+
+let infosLivre2 = 'Le livre "' + tabLivreIndex[1] + '" contient ' + tabLivreIndex[0] + ' pages, au prix de ' + tabLivreIndex[2] + ' €. Existe au format numérique : vrai';
+console.log(tabLivreIndex.length);
+```
+
+- Stocker les informations (dans l'ordre de création des variables) dans un tableau associatif `tabLivreAssoc` (en clé le nom de la variable)
 - Créer une chaine de caractères `infosLivre3` qui contient la même valeur que `infoLivre` mais à partir du tableau
 
+Correction
+
+```js
+let tabLivreAssoc = {
+  nombrePages: 354,
+  titre: "JavaScript pour les Nuls",
+  prix: 24.95,
+  formatNumerique: true
+};
+
+let infosLivre3 = 'Le livre "' + tabLivreAssoc.titre + '" contient ' + tabLivreAssoc['nombrePages'] + ' pages, au prix de ' + tabLivreAssoc.prix + ' €. Existe au format numérique : vrai';
+```
 
 ### Constante
 
